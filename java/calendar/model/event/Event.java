@@ -2,7 +2,10 @@ package calendar.model.event;
 
 import java.time.LocalDateTime;
 
-/** Interface for calendar events. */
+/** Interface for calendar events.This interface
+ * Defines the basic structure and required methods
+ * for any calendar event implementation, including name,
+ * time range, description, location, and visibility */
 public interface Event {
   /** Returns the event name. */
   String getName();

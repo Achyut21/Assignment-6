@@ -2,7 +2,11 @@ package calendar.model.event;
 
 import java.time.LocalDateTime;
 
-/** Abstract base class for calendar events. */
+/** This class provides common properties and behaviors for all types of calendar events,
+ * including the event's name, time range, description, location, and visibility.
+ * It implements the Event interface and subclasses should extend this class
+ * to provide additional functionality to specific types of events.
+ */
 public abstract class AbstractCalendarEvent implements Event {
   protected String name;
   protected LocalDateTime start;

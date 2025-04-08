@@ -8,7 +8,9 @@ import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
 
-/** Represents a calendar containing events with a unique name and timezone. */
+/** Represents a calendar containing events associated with a unique name and time zone.
+ * this class provides functionality for managing events, checking for scheduling conflicts,
+ * and editing calendar or event properties. */
 public class Calendar {
   private final List<Event> events = new ArrayList<>();
   private String name;
