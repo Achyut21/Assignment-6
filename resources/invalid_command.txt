@@ -1,0 +1,6 @@
+create event
+create event Meeting from 2025-04-01T10:00
+edit event description Meeting 2025-04-01T10:00 to 2025-04-01T11:00 with NewDesc
+print events
+export something
+show status

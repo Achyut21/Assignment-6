@@ -1,0 +1,17 @@
+create calendar --name WorkCal --timezone America/New_York
+create calendar --name PersonalCal --timezone America/Los_Angeles
+use calendar --name WorkCal
+create event --autodecline Meeting from 2025-06-01T09:00 to 2025-06-01T10:00
+create event --autodecline Workshop from 2025-06-01T11:00 to 2025-06-01T12:00 repeats MTW for 3 times
+edit event description Meeting from 2025-06-01T09:00 to 2025-06-01T10:00 with Team_Meeting_Updated
+print events on 2025-06-01
+export cal workcal_export.csv
+show status on 2025-06-01T09:30
+copy event Meeting on 2025-06-01T09:00 --target PersonalCal to 2025-06-02T10:00
+copy events on 2025-06-01 --target PersonalCal to 2025-06-03T00:00
+copy events between 2025-06-01 and 2025-06-01 --target PersonalCal to 2025-06-04
+edit calendar --name WorkCal --property timezone America/Chicago
+edit calendar --name PersonalCal --property name MyPersonalCal
+use calendar --name MyPersonalCal
+create event --autodecline Seminar from 2025-06-02T14:00 to 2025-06-02T15:00 repeats F until 2025-06-30T00:00
+edit events location Seminar from 2025-06-02T14:00 with Room101
